@@ -6,9 +6,9 @@
 - **Comando CLI**: `python main.py --start EstacionA --goal EstacionF --algorithm dijkstra`
 - **Salida esperada**:
   ```
-  Path: ['EstacionA', 'EstacionB', 'EstacionE', 'EstacionF']
-  Cost: 16.0
-  Expanded nodes: ['EstacionA', 'EstacionB', 'EstacionE', 'EstacionF']
+  Path: ['EstacionA', 'EstacionG', 'EstacionH', 'EstacionF']
+  Cost: 18.0
+  Expanded nodes: [...]
   Time: X.XX ms
   ```
 

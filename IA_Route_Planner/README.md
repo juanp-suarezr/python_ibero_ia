@@ -62,9 +62,9 @@ python main.py --start EstacionA --goal EstacionF --algorithm dijkstra --closed 
 
 Salida:
 ```
-Path: ['EstacionA', 'EstacionB', 'EstacionE', 'EstacionF']
-Cost: 16.0
-Expanded nodes: ['EstacionA', 'EstacionB', 'EstacionE', 'EstacionF']
+Path: ['EstacionA', 'EstacionG', 'EstacionH', 'EstacionF']
+Cost: 18.0
+Expanded nodes: [...]
 Time: 0.12 ms
 ```
 
@@ -83,9 +83,9 @@ POST a `http://localhost:5000/api/route` con JSON:
 Respuesta:
 ```json
 {
-  "path": ["EstacionA", "EstacionB", "EstacionE", "EstacionF"],
-  "cost": 16.0,
-  "expanded": ["EstacionA", "EstacionB", "EstacionE", "EstacionF"],
+  "path": ["EstacionA", "EstacionG", "EstacionH", "EstacionF"],
+  "cost": 18.0,
+  "expanded": [...],
   "status": "ok"
 }
 ```
@@ -102,8 +102,10 @@ El archivo `backend/knowledge_base.txt` contiene hechos en formato Prolog:
 
 ## Algoritmos
 
+Utiliza NetworkX para implementaciones eficientes.
+
 - **Dijkstra**: Camino más corto por costo.
-- **A***: Dijkstra con heurística (actualmente 0, extensible).
+- **A***: Dijkstra con heurística (actualmente 0, extensible a Manhattan).
 - **BFS**: Búsqueda por anchura (costo = número de aristas).
 
 ## Requisitos

@@ -5,5 +5,14 @@ edge(EstacionB, EstacionC, 7).
 edge(EstacionC, EstacionD, 4).
 edge(EstacionD, EstacionE, 6).
 edge(EstacionE, EstacionF, 5).
+edge(EstacionA, EstacionG, 3).
+edge(EstacionG, EstacionH, 2).
+edge(EstacionH, EstacionF, 8).
+edge(EstacionB, EstacionI, 4).
+edge(EstacionI, EstacionJ, 6).
+edge(EstacionJ, EstacionF, 7).
+edge(EstacionD, EstacionK, 5).
+edge(EstacionK, EstacionL, 3).
+edge(EstacionL, EstacionF, 9).
 % Closed stations: closed(Station).
 closed(EstacionC).
