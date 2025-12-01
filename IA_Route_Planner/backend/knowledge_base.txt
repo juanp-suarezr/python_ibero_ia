@@ -1,0 +1,9 @@
+% Knowledge base for route planner
+% Edges: edge(StationA, StationB, Cost).
+edge(EstacionA, EstacionB, 5).
+edge(EstacionB, EstacionC, 7).
+edge(EstacionC, EstacionD, 4).
+edge(EstacionD, EstacionE, 6).
+edge(EstacionE, EstacionF, 5).
+% Closed stations: closed(Station).
+closed(EstacionC).
